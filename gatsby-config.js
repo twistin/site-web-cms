@@ -145,5 +145,18 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+
+    
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+            path: `${__dirname}/content/posts`,
+          },
+        },
+      
+    
   ].filter(Boolean),
 }
