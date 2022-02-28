@@ -52,3 +52,27 @@ Podemos facer unha frase completa a través das seguintes liñas:
 Creamos unha variable  littleMelody a través do módulo * converter* (contén ferramentas para cargar música desde varios formatos de arquivo, xa sexa desde un disco, desde a web ou desde texto e convertelos en obxectos  music21). A través da función * parse* pasámoslle un argumento en forma de * string* , encabezada pola palabra  * tinynotation* , o compás e con todas as notas que queremos que integren a melodía. A cada unha delas o achegamos un número que representará as súas duracións. 
 Se queremos escoitar a melodía do exemplo pasámoslle á variable  littleMelody a función .show(' midi') e como o  string * midi*.
 
+## Análise de música do século  XX.
+ As técnicas analíticas aplicables á música do século  XX tamén teñen en Music21 unha ferramenta de primeira orde para o seu estudo.
+ Por exemplo, vexamos a matriz a partir da serie de tons na apertura do cuarteto de corda de Arnold  Schoenberg.
+ ![Imagen_4: Music21, MIT](./schoenberg.jpg) 
+ 
+
+ Nunha composición musical, pódese buscar  cuan comúns son varios tons: neste exemplo, unha composición do século  xiv. 
+
+ ![Imagen_4: Music21, MIT](./dicant.jpg) 
+ 
+ Algúns destes exemplos utilizados neste artigo, dun corpus de obras propio de Music21 onde están integradas, miles de pezas de libre uso para estudar. Por exemplo, neste corpus están incluídos todos as corais de  Bach. No seguinte exemplo, accedemos ao coral de  Bach,  BWV 295 e agregamos o nome da nota en  aleman.
+
+'
+bwv295 = corpus. parse(' bach/ bwv295')
+for  thisNote  in  bwv295. recurse().notes:
+   thisNote. addLyric( thisNote. pitch. german)
+bwv295.show()
+'
+
+![Imagen_4: Music21, MIT](./coral.jpg) 
+
+Para terminar esta breve presentación, Music21pode ser simple de usar pero tamén é extremadamente poderosa. Como todo software (Photoshop comparado con  MS  Paint,  AutoCAD, Excel), hai unha pequena curva de aprendizaxe, especialmente para as persoas que non programaron antes.
+
+Para usar  music21, como xa comentamos máis arriba, necesítase certa familiaridade coa linguaxe de programación " Python".  Python é amplamente considerado como un das linguaxes máis fáciles de aprender e, a miúdo, ensínase como primeira linguaxe de programación. Non é necesario ser un programador experimentado; só un pouco de  Python e poderase comezar e explorar a música de novas maneiras con  music21.
