@@ -8,11 +8,11 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
     siteTitle: `Son en Tránsito`,
-    siteTitleAlt: `Son en Tránsito - METCon`,
-    siteHeadline: `Son en Tránsito - METCon de sdCarr`,
+    siteTitleAlt: `Son en Tránsito - SenT`,
+    siteHeadline: `Son en Tránsito - SenT de sdCarr`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Blog dedicado a la convergencia de música educación tecnología `,
-    siteLanguage: `en`,
+    siteDescription: `Blog dedicado a converxencia da música educación tecnoloxía `,
+    siteLanguage: `gal`,
     siteImage: `/banner.jpg`,
     author: `@lekoarts_de`,
   },
@@ -34,7 +34,7 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/sonentransito`,
           },
           {
             name: `Homepage`,
