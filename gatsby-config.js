@@ -37,6 +37,13 @@ module.exports = {
             url: `https://twitter.com/sonentransito`,
           },
           {
+            name:`Facebook`,
+            url: `https://www.facebook.com/Son-en-Tr%C3%A1nsito-103927522241663`
+          
+          }
+
+          ,
+          {
             name: `Homepage`,
             url: `https://sonentransito.netlify.app/`,
           },
@@ -145,7 +152,20 @@ module.exports = {
         openAnalyzer: false,
       },
     },
-
+    
+    {
+      resolve: "gatsby-plugin-social-cards",
+      options: {
+        // ommit to skip
+        authorImage: "./static/img/coffee-art.jpg",
+        // image to use when no cover in frontmatter
+        backgroundImage: "./static/img/hvitserkur.JPG",
+        // author to use when no auth in frontmatter
+        defaultAuthor: "Andri Óskarsson",
+        // card design
+        design: "default", // 'default' or 'card'
+      },
+    },
     
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
@@ -155,6 +175,7 @@ module.exports = {
           options: {
             path: `${__dirname}/content/posts`,
           },
+
         },
       
     
