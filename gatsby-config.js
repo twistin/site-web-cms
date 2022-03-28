@@ -38,7 +38,7 @@ module.exports = {
           },
           {
             name:`Facebook`,
-            url: `https://www.facebook.com/Son-en-Tr%C3%A1nsito-103927522241663`
+            url: `https://www.facebook.com/Son-en-Transito-107220208604565`
           
           }
 
