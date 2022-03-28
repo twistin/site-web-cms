@@ -8,8 +8,8 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
     siteTitle: `Son en Tránsito`,
-    siteTitleAlt: `Son en Tránsito - SenT`,
-    siteHeadline: `Son en Tránsito - SenT de sdCarr`,
+    siteTitleAlt: `Son en Tránsito - SonT`,
+    siteHeadline: `Son en Tránsito - SonT de sdCarr`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteDescription: `Blog dedicado a converxencia da música educación tecnoloxía `,
     siteLanguage: `gal`,
@@ -159,7 +159,7 @@ module.exports = {
         // ommit to skip
         authorImage: "./static/img/coffee-art.jpg",
         // image to use when no cover in frontmatter
-        backgroundImage: "./static/img/hvitserkur.JPG",
+        backgroundImage: "./static/img/android-chrome-512x512.png",
         // author to use when no auth in frontmatter
         defaultAuthor: "Andri Óskarsson",
         // card design
