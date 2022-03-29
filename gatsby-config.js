@@ -177,7 +177,39 @@ module.exports = {
           },
 
         },
-      
+        {
+          resolve: `gatsby-plugin-react-social-cards`,
+          options: {
+              query: `
+                  {
+                      allMarkdownRemark {
+                          nodes {
+                              fields {
+                                  slug
+                              }
+                              frontmatter {
+                                  title
+                                  description
+                              }
+                          }
+                      }
+                  }
+              `,
+              queryToPages: (result) => 
+                  result.data.allMarkdownRemark.nodes.map(node => {
+                      const slugWithoutSlashes = node.fields.slug.node.slug.replace(/\//g, '');
+                      return {
+                          slug: `/${slugWithoutSlashes}`,
+                          pageContext: {
+                              title: node.frontmatter.title,
+                              coverImage: node.frontmatter.coverImage,
+                          },
+                      };
+                  }),
+              component: require.resolve('./src/components/social-card.js'),
+              cardLimit: 0, // Useful for debugging.
+          },
+      },
     
   ].filter(Boolean),
 }
