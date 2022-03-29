@@ -23,6 +23,7 @@
     "gatsby-plugin-feed": "^4.0.0",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
+    "gatsby-plugin-react-social-cards": "^1.0.0",
     "gatsby-plugin-sharp": "^4.6.0",
     "gatsby-plugin-sitemap": "^5.0.0",
     "gatsby-plugin-social-cards": "^0.5.18-rc5",
