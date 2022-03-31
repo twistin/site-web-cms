@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: `Son en Tránsito`,
     siteTitleAlt: `Son en Tránsito - SonT`,
     siteHeadline: `Son en Tránsito - SonT de sdCarr`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://sonentransito.netlify.app/blog`,
     siteDescription: `Blog dedicado a converxencia da música educación tecnoloxía `,
     siteLanguage: `gal`,
     siteImage: `/banner.jpg`,
