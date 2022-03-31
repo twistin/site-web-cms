@@ -17,6 +17,8 @@ module.exports = {
     author: `@lekoarts_de`,
   },
   plugins: [
+
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
