@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "c7efe226352cab13",
+    "type": "split",
+    "children": [
+      {
+        "id": "75d90011683883b7",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "DeepLearning-Fastai/Tema-02.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dfe668d16eb509e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c7a1522be7b2c1f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53bf689ab227fc08",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "564cfb6bef5c4898",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e51534db8af02de4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac7e7f56bd63183b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87bfd2aff7c6e0e5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "DeepLearning-Fastai/Tema-02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "75d90011683883b7",
+  "lastOpenFiles": [
+    "DeepLearning-Fastai/Tema-02.md",
+    "DeepLearning-Fastai/Tema-01-intro.md"
+  ]
+}
