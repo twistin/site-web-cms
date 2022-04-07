@@ -155,19 +155,7 @@ module.exports = {
       },
     },
     
-    {
-      resolve: "gatsby-plugin-social-cards",
-      options: {
-        // ommit to skip
-        authorImage: "./static/img/coffee-art.jpg",
-        // image to use when no cover in frontmatter
-        backgroundImage: "./static/img/android-chrome-512x512.png",
-        // author to use when no auth in frontmatter
-        defaultAuthor: "Andri Óskarsson",
-        // card design
-        design: "default", // 'default' or 'card'
-      },
-    },
+   
     
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
@@ -179,39 +167,7 @@ module.exports = {
           },
 
         },
-        {
-          resolve: `gatsby-plugin-react-social-cards`,
-          options: {
-              query: `
-                  {
-                      allMarkdownRemark {
-                          nodes {
-                              fields {
-                                  slug
-                              }
-                              frontmatter {
-                                  title
-                                  description
-                              }
-                          }
-                      }
-                  }
-              `,
-              queryToPages: (result) => 
-                  result.data.allMarkdownRemark.nodes.map(node => {
-                      const slugWithoutSlashes = node.fields.slug.node.slug.replace(/\//g, '');
-                      return {
-                          slug: `/${slugWithoutSlashes}`,
-                          pageContext: {
-                              title: node.frontmatter.title,
-                              coverImage: node.frontmatter.coverImage,
-                          },
-                      };
-                  }),
-              component: require.resolve('./src/components/social-card.js'),
-              cardLimit: 0, // Useful for debugging.
-          },
-      },
+       
     
   ].filter(Boolean),
 }
